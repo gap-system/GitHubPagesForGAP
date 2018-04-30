@@ -168,7 +168,11 @@ GeneratePackageYML:=function(pkg)
         fi;
     fi;
 
-    # TODO: use Keywords?
+    if IsBound(pkg.Keywords) and
+        Length(pkg.Keywords) > 0 then
+        AppendTo(stream, "keywords: |\n");
+        AppendTo(stream, "    ", JoinStringsWithSeparator(pkg.Keywords,", "),".\n");
+    fi;
 
     CloseStream(stream);
 end;

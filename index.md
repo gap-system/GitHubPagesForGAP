@@ -43,6 +43,12 @@ The following additional GAP packages are not required, but suggested:
  {% endfor %}
 {% endif %}
 
+{% if site.data.package.keywords and site.data.package.keywords.size > 0 $}
+## Keywords
+
+{{site.data.package.keywords}}
+{% endif %}
+
 {% if site.github.issues_url %}
 ## Feedback
 
