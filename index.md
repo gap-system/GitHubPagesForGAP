@@ -49,6 +49,17 @@ The following additional GAP packages are not required, but suggested:
 {{site.data.package.keywords}}
 {% endif %}
 
+{% if site.data.package.citeas %}
+## Citing
+
+Please, cite as 
+
+{{site.data.package.citeas}}
+
+You can get more info by typing `Cite("{{ site.data.package.name }}");` in the gap prompt.
+{% endif %}
+
+
 {% if site.github.issues_url %}
 ## Feedback
 
