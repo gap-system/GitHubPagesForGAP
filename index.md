@@ -43,6 +43,23 @@ The following additional GAP packages are not required, but suggested:
  {% endfor %}
 {% endif %}
 
+{% if site.data.package.keywords and site.data.package.keywords.size > 0 %}
+## Keywords
+
+{{site.data.package.keywords}}
+{% endif %}
+
+## Citing
+
+Please, cite as 
+
+{{site.data.package.citeas}}
+
+You can get more info by typing `Cite("{{ site.data.package.name }}");` in the gap prompt.
+
+{% include button-bibtex.html %}
+
+
 {% if site.github.issues_url %}
 ## Feedback
 
