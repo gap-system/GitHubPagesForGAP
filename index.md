@@ -57,9 +57,7 @@ Please, cite as
 
 You can get more info by typing `Cite("{{ site.data.package.name }}");` in the gap prompt.
 
-```
-{{site.data.package.bibtex}}
-```
+{% include button-bibtex.html %}
 
 
 {% if site.github.issues_url %}
