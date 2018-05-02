@@ -180,6 +180,11 @@ GeneratePackageYML:=function(pkg)
     od;
     AppendTo(stream, "\n");
 
+    AppendTo(stream, "bibtex: |\n");
+    for tmp in  SplitString(StringBibXMLEntry(ParseBibXMLextString(BibEntry(pkg)).entries[1],"BibTeX"),"\n") do
+        AppendTo(stream, "    ", tmp, "\n");
+    od;
+    AppendTo(stream, "\n");
 
     CloseStream(stream);
 end;
