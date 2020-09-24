@@ -1,2 +1,6 @@
-markdown: kramdown
+markdown: CommonMarkGhPages
+# see https://github.com/github/pages-gem/blob/1cb8d3b5e634798e9a4b97042652318dc438e25b/lib/github-pages/configuration.rb#L154
+commonmark:
+  extensions: ["table", "strikethrough", "autolink", "tagfilter"]
+  options: ["footnotes"]
 highlighter: rouge
