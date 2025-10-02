@@ -1,5 +1,6 @@
 ---
 layout: null
+permalink: /doc/index.html
 ---
 <html>
   <head>
